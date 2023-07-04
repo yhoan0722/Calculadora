@@ -16,6 +16,7 @@ namespace CalculadoraBasica
                 Console.WriteLine("\t1. Sumar");
                 Console.WriteLine("\t2. Restar");
                 Console.WriteLine("\t3. Multiplicar");
+                Console.WriteLine("\t4. Dividir");
                 Console.WriteLine("\n\t0. Salir");
 
                 Console.Write("\n\tElija una opción: ");
@@ -46,6 +47,13 @@ namespace CalculadoraBasica
                             case 3:
                                 resultado = numero1 * numero2;
                                 Console.WriteLine("Opción seleccionada: Multiplicación");
+                                break;
+                            case 4:
+                                //Solo se divide si numero2 es diferente de cero
+                                if (numero2 != 0)
+                                    resultado = numero1 / numero2;
+
+                                Console.WriteLine("Opción seleccionada: División");
                                 break;
                         }
 
