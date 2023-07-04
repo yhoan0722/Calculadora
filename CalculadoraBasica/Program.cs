@@ -13,7 +13,8 @@ namespace CalculadoraBasica
             while (opcion != 0)
             {
                 Console.WriteLine("*********** Calculadora básica para dos números ***********");
-                Console.WriteLine("\t1. Sumar");               
+                Console.WriteLine("\t1. Sumar");
+                Console.WriteLine("\t2. Restar");
                 Console.WriteLine("\n\t0. Salir");
 
                 Console.Write("\n\tElija una opción: ");
@@ -37,8 +38,11 @@ namespace CalculadoraBasica
                                 resultado = numero1 + numero2;
                                 Console.WriteLine("Opción seleccionada: Suma");
                                 break;
+                            case 2:
+                                resultado = numero1 - numero2;
+                                Console.WriteLine("Opción seleccionada: Resta");
+                                break;
 
-                           
                         }
 
                         //si la operación es división y el numero2 es cero, diga que no hay división
